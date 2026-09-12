@@ -3,70 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
+    <title>Palles Raiza A. - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Weather Dashboard</h1>
-            <p>Real-time weather information at your fingertips</p>
-        </header>
-
-        <div class="search-section">
-            <input 
-                type="text" 
-                id="cityInput" 
-                placeholder="Enter city name..." 
-                class="search-input"
-            >
-            <button id="searchBtn" class="search-btn">Search</button>
-            <button id="locationBtn" class="location-btn">📍 Use My Location</button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Palles Raiza A.</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#itc-c508">ITC-C508</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div id="error" class="error-message"></div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm Palles Raiza A.</h1>
+            <p class="tagline">Visual Designer & Creative Developer</p>
+            <a href="#about" class="cta-button">Explore My Work</a>
+        </div>
+    </section>
 
-        <div id="weatherContainer" class="weather-container">
-            <div class="current-weather">
-                <div class="city-info">
-                    <h2 id="cityName">--</h2>
-                    <p id="date" class="date">--</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio. I'm a passionate visual designer focused on creating clean, minimalist designs that are both beautiful and functional. With a keen eye for aesthetics and user experience, I bring ideas to life through thoughtful design.</p>
+            <div class="skills">
+                <div class="skill-item">
+                    <h3>Design</h3>
+                    <p>Visual design, UI/UX, minimalist aesthetics</p>
                 </div>
-                <div class="weather-main">
-                    <div class="temp-section">
-                        <span id="temperature" class="temperature">--°</span>
-                        <span id="weatherType" class="weather-type">--</span>
-                    </div>
-                    <img id="weatherIcon" src="" alt="Weather icon" class="weather-icon">
+                <div class="skill-item">
+                    <h3>Development</h3>
+                    <p>HTML, CSS, JavaScript, Web Development</p>
                 </div>
-                <div class="weather-details">
-                    <div class="detail">
-                        <span class="label">Feels Like</span>
-                        <span id="feelsLike" class="value">--°</span>
-                    </div>
-                    <div class="detail">
-                        <span class="label">Humidity</span>
-                        <span id="humidity" class="value">--%</span>
-                    </div>
-                    <div class="detail">
-                        <span class="label">Wind Speed</span>
-                        <span id="windSpeed" class="value">-- m/s</span>
-                    </div>
-                    <div class="detail">
-                        <span class="label">Pressure</span>
-                        <span id="pressure" class="value">-- hPa</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="forecast-section">
-                <h3>5-Day Forecast</h3>
-                <div id="forecastContainer" class="forecast-grid">
-                    <!-- Forecast cards will be inserted here -->
+                <div class="skill-item">
+                    <h3>Problem Solving</h3>
+                    <p>Creative thinking, attention to detail</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- ITC-C508 Section -->
+    <section id="itc-c508" class="itc-section">
+        <div class="container">
+            <h2>ITC-C508</h2>
+            <p class="section-intro">Course work and academic projects</p>
+            
+            <div class="accordion">
+                <!-- Prelims -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>📋 Prelims</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <h4>Preliminary Examination Projects</h4>
+                            <ul>
+                                <li>Project 1: [Add your prelim project]</li>
+                                <li>Project 2: [Add your prelim project]</li>
+                                <li>Project 3: [Add your prelim project]</li>
+                            </ul>
+                            <p class="placeholder">Update this section with your actual prelim projects and details.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Midterms -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>📚 Midterms</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <h4>Midterm Examination Projects</h4>
+                            <ul>
+                                <li>Project 1: [Add your midterm project]</li>
+                                <li>Project 2: [Add your midterm project]</li>
+                                <li>Project 3: [Add your midterm project]</li>
+                            </ul>
+                            <p class="placeholder">Update this section with your actual midterm projects and details.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Finals -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>🎓 Finals</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <h4>Final Examination Projects</h4>
+                            <ul>
+                                <li>Project 1: [Add your final project]</li>
+                                <li>Project 2: [Add your final project]</li>
+                                <li>Project 3: [Add your final project]</li>
+                            </ul>
+                            <p class="placeholder">Update this section with your actual final projects and details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'd love to hear from you. Feel free to reach out!</p>
+            <div class="contact-info">
+                <a href="mailto:your-email@example.com" class="contact-link">📧 Email</a>
+                <a href="https://github.com/rairaibaui" class="contact-link">🐙 GitHub</a>
+                <a href="#" class="contact-link">💼 LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Palles Raiza A. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
